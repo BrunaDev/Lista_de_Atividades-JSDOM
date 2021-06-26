@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Lista de Atividades - JavaScript DOM
 Projeto didático para Javascript(DOM) para turma de desenvolvimento de sistemas 2021.
 
@@ -17,9 +16,3 @@ Através de uma janela da internet - Google Chrome, Microsoft Edge, Firefox - po
 <p>4. Agora, escolha seu navegador de preferência e bom aproveito!</p>
 
 #### Obs.: ao atualizar a página os items se perdem, por quê? Bom, isso é simples, este código não está vinculado em nenhum banco de dados.
-=======
-# Lista de Atividades - JavaScript DOM
-Projeto didático para Javascript(DOM) para turma de desenvolvimento de sistemas 2021.
-
-## O que esse código faz?
->>>>>>> checklist
