@@ -9,7 +9,7 @@ Através de uma janela da internet - Google Chrome, Microsoft Edge, Firefox - po
 <p>
 1.0 Faça o download dos meus arquivos em .zip, ou ainda, clone o repositório em uma pasta, na máquina, de sua preferência;</br>
 1.1 Caso não saiba como, clique no botão verde chamado "Code". Nele haverá as duas opções, Download ZIP ou o link do HTTPS;</br>
-1.2 No primeiro caso, quando fizer o download é só descompactar a pasta; no segundo, dentro do Git Bash Here, use *git clone https://github.com/BrunaDev/Lista_de_Atividades-JSDOM.git*;
+1.2 No primeiro caso, quando fizer o download é só descompactar a pasta; no segundo, dentro do Git Bash Here, use --> git clone https://github.com/BrunaDev/Lista_de_Atividades-JSDOM.git ;
 </p>
 <p>2. Após isso, dentro da pasta, haverá um arquivo chamado "index.html". Clique em cima dele com o botão direito do seu mouse;</p>
 <p>3. Ao clicar o botão, abrirá uma janela de informações e nela clique em "Abrir com";</p>
