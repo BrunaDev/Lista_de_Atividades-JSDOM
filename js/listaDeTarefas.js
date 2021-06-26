@@ -1,6 +1,5 @@
 ( () => { //function anonymous
-    const novaTarefa = document.querySelector('[data-form-button]')
-    const inputTarefa = document.querySelector('[data-form-input]')
+    const novaTarefa = document.querySelector('[data-form-button]');
 
     function criarBotaoDelete(){
         const botaoDelete = document.createElement('span');
@@ -12,6 +11,16 @@
         return botaoDelete;
     }
 
+    function criarBotaoConcluir(){
+        const botaoConcluir = document.createElement('input');
+        botaoConcluir.setAttribute('type','checkbox');
+        botaoConcluir.classList = 'form-check-input';
+
+        botaoConcluir.addEventListener('click', concluirTarefa);
+
+        return botaoConcluir;
+    }
+
     function deletarTarefa(evento){
         const botaoDeleteClicado = evento.target;
         const itemDaLista = botaoDeleteClicado.parentElement;
@@ -19,20 +28,29 @@
         itemDaLista.remove();
     }
 
+    function concluirTarefa(evento){
+        const botaoConcluirClicado = evento.target;
+        const itemDaListaConcluido = botaoConcluirClicado.parentElement;
+        itemDaListaConcluido.classList.toggle('tarefa_concluida');
+    }
+
     function criarTarefa(evento){
 
        evento.preventDefault();
 
+       const inputTarefa = document.querySelector('[data-form-input]');
        const valorTarefa = inputTarefa.value;
        const listaDeTarefas = document.querySelector('[data-task]');
 
        novaLabel =document.createElement('label');
-       novaLabel.innerText = valorTarefa;
+       novaLabel.innerText = `- ${valorTarefa}`;
        novaLabel.className = "form-check-label"
 
        novoItem = document.createElement('li');
+
        novoItem.appendChild(novaLabel);
-       novoItem.appendChild(criarBotaoDelete())
+       novoItem.appendChild(criarBotaoDelete());
+       novoItem.appendChild(criarBotaoConcluir());
 
        listaDeTarefas.appendChild(novoItem);
 
