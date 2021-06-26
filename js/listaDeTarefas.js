@@ -1,6 +1,5 @@
 ( () => { //function anonymous
-    const novaTarefa = document.querySelector('[data-form-button]')
-    const inputTarefa = document.querySelector('[data-form-input]')
+    const novaTarefa = document.querySelector('[data-form-button]');
 
     function criarBotaoDelete(){
         const botaoDelete = document.createElement('span');
@@ -39,6 +38,7 @@
 
        evento.preventDefault();
 
+       const inputTarefa = document.querySelector('[data-form-input]');
        const valorTarefa = inputTarefa.value;
        const listaDeTarefas = document.querySelector('[data-task]');
 
